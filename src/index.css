@@ -1,7 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Urbanist:wght@300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  font-family: 'Yu Gothic', 'Noto Sans JP', sans-serif;
-}
