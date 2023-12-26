@@ -1,22 +1,20 @@
-import threeEyesWhite from 'assets/3eyes-w.svg';
-import threeEyesBlack from 'assets/3eyes-b.svg';
-import { useMedia } from 'react-use';
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
-  const isDark = useMedia('(prefers-color-scheme: dark)');
-
   return (
-    <>
-      <img
-        src={isDark ? threeEyesWhite : threeEyesBlack}
-        className="
-        m-auto
-        h-40
-        animate-[spin_10s_linear_infinite]
-        hover:animate-[spin_0.004s_linear_infinite]
+    <div
+      className="
+        bg-back flex min-h-screen
+        flex-col items-center
+        justify-center text-white
       "
-      />
-      <p className="mx-auto my-5 text-xl">UNDER CONSTRUCTION</p>
-    </>
+    >
+      <p className="font-poiret-one text-6xl">tufusa.net</p>
+      <div className="font-urbanist text-main flex flex-row gap-6 p-6 text-2xl">
+        <Link to="/1F6A7" children="profile" />
+        <Link to="/1F6A7" children="gallery" />
+        <Link to="/1F6A7" children="note" />
+      </div>
+    </div>
   );
 };
